@@ -1,0 +1,193 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Social Network APIs",
+    "collectionId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+    "dateExported": "2024-09-13T15:58:37.620Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "73fc5ccc-b871-496e-88fe-445ef4f026ec",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "signup user",
+            "url": "http://127.0.0.1:8000/api/signup/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-13T12:33:26.246Z",
+            "modified": "2024-09-13T13:10:53.823Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"astra@example.com\",\n    \"name\": \"astra\",\n    \"password\": \"password123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e3c328f7-5e98-4d53-941f-afb5238da6eb",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "login user",
+            "url": "http://127.0.0.1:8000/api/login/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-13T12:40:22.563Z",
+            "modified": "2024-09-13T14:03:24.953Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"amar@example.com\",\n    \"password\": \"password123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ab328bb5-5100-4df3-983b-90da168d3352",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "serach user by email",
+            "url": "http://127.0.0.1:8000/api/users/search/?q=amarendra@example.com",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-09-13T13:02:45.511Z",
+            "modified": "2024-09-13T15:07:05.064Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token c8d94068cf440902e72ce45bbc8768b70721a981"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "amarendra@example.com",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "cd9f77ff-86c6-4abe-982f-b1b4c3edc114",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "send friend request",
+            "url": "http://127.0.0.1:8000/api/friend-requests/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-13T12:44:17.871Z",
+            "modified": "2024-09-13T14:17:23.513Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 73d3e299b1639d0cb9ce3c570bf357de3462df05"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"to_user\": 6\n\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "84b12b37-e3dc-4ace-85ab-43c39780c34e",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "list pending friend requests",
+            "url": "http://127.0.0.1:8000/api/friend-requests/pending/",
+            "method": "GET",
+            "sortNum": 32500,
+            "created": "2024-09-13T12:53:14.141Z",
+            "modified": "2024-09-13T12:53:33.013Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6e9470fcf8991cac20e626e6480e4f3df248a7e3"
+                }
+            ]
+        },
+        {
+            "_id": "f85aeb6a-baa2-44c8-b359-4b5af9751629",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "search user by name",
+            "url": "http://127.0.0.1:8000/api/users/search/?q=am",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2024-09-13T13:05:31.286Z",
+            "modified": "2024-09-13T14:10:35.304Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6e9470fcf8991cac20e626e6480e4f3df248a7e3"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "am",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "f27e8594-5686-4b54-a8aa-9b9fe10df81c",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "accept friend request",
+            "url": "http://127.0.0.1:8000/api/friend-requests/17/",
+            "method": "PATCH",
+            "sortNum": 35000,
+            "created": "2024-09-13T13:29:44.297Z",
+            "modified": "2024-09-13T14:03:32.574Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c3392c63b502ff25255811c763d5ad4316d90b2"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"status\": \"accepted\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8f9ed3b6-28ee-441c-8daf-544564a8ff71",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "reject friend request",
+            "url": "http://127.0.0.1:8000/api/friend-requests/13/",
+            "method": "PATCH",
+            "sortNum": 37500,
+            "created": "2024-09-13T13:38:47.100Z",
+            "modified": "2024-09-13T13:50:44.377Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 6e9470fcf8991cac20e626e6480e4f3df248a7e3"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"status\": \"rejected\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "105667fd-d611-4765-a3f2-07edc0d60b7c",
+            "colId": "a62b0d7e-1d08-4f49-afe5-5ad45d54982a",
+            "containerId": "",
+            "name": "list friends",
+            "url": "http://127.0.0.1:8000/api/friend-requests/accepted/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-09-13T13:08:49.236Z",
+            "modified": "2024-09-13T14:03:51.583Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c3392c63b502ff25255811c763d5ad4316d90b2"
+                }
+            ]
+        }
+    ],
+    "ref": "bMyeabkVEFruf2hMUvfc9Hzj0ucf95kDBGPZOQwqjAA-TlHDkfbd9ctJMlaF7GSMs1z4WhioTxe4eCvJtJKHOg"
+}
