@@ -1,5 +1,8 @@
 # Django Social Networking API
 
+### Assignment link
+https://drive.google.com/file/d/1zjNqjpcvJG843RnJk9Y_CqPLb5tVBuL1/view
+
 ## 1. Prerequisites
 Before setting up the project, ensure you have the following installed:
 
